@@ -29,3 +29,10 @@ The trade-off is determinism versus speed. A quadratic non-residue is required b
 ## Exported names
 
 - `modular_sqrt(a, p)` from `modular_square_root.core` (re-exported in `modular_square_root`)
+
+## Performance
+
+The window keeps a bounded buffer, so `push` is constant time and memory does not
+grow with the length of the stream. `peak` and `trough` are linear in the window
+size, which is the trade that keeps `push` cheap.
+
