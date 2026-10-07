@@ -1,6 +1,6 @@
 [project]
 name = "modular-square-root"
-version = "0.1.0"
+version = "0.1.1"
 description = "Computes Tonelli-Shanks square roots modulo a prime, returning None for non-residues."
 requires-python = ">=3.10"
 dependencies = []
